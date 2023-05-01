@@ -6,15 +6,7 @@
     "node": ">=18"
   },
   "workspaces": [
-    "langchain",
-    "examples",
-    "docs",
-    "test-exports-esm",
-    "test-exports-cjs",
-    "test-exports-cf",
-    "test-exports-cra",
-    "test-exports-vercel",
-    "test-exports-vite"
+    "langchain"
   ],
   "repository": {
     "type": "git",
