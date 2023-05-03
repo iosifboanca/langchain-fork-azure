@@ -291,7 +291,6 @@ class ChatOpenAI extends base_js_1.BaseChatModel {
                     ...options,
                     responseType: "stream",
                     onmessage: (event) => {
-                        console.log("CHAT_MODELS", event);
                         if (event.data?.trim?.() === "[DONE]") {
                             resolve(response);
                         }

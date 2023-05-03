@@ -312,7 +312,6 @@ export class OpenAI extends BaseLLM {
                         ...options,
                         responseType: "stream",
                         onmessage: (event) => {
-                            console.log("LLM-OPENAI", event);
                             if (event.data?.trim?.() === "[DONE]") {
                                 resolve({
                                     ...response,

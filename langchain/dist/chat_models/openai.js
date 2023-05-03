@@ -285,7 +285,6 @@ export class ChatOpenAI extends BaseChatModel {
                     ...options,
                     responseType: "stream",
                     onmessage: (event) => {
-                        console.log("CHAT_MODELS", event);
                         if (event.data?.trim?.() === "[DONE]") {
                             resolve(response);
                         }

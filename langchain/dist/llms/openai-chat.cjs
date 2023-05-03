@@ -277,7 +277,6 @@ class OpenAIChat extends base_js_1.LLM {
                     ...options,
                     responseType: "stream",
                     onmessage: (event) => {
-                        console.log("OPENAI-CHAT", event);
                         if (event.data?.trim?.() === "[DONE]") {
                             resolve(response);
                         }
